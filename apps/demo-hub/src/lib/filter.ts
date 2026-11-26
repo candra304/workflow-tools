@@ -1,5 +1,6 @@
 /** Filter + sorting Demo Hub — dipindah 1:1 dari versi single-file. */
 import type { Demo } from "@workflow-tools/data";
+import { demoLink as resolveLink } from "./hosting";
 
 export type DemoSort = "baru" | "lama" | "az";
 
@@ -18,7 +19,11 @@ export function sortDemos(list: Demo[], sort: DemoSort): Demo[] {
   return arr;
 }
 
-/** Link demo — sama seperti `demoLink()` di versi single-file. */
+/**
+ * Link demo — Custom Link user kalau ada, kalau tidak path demo.
+ * (Logika di lib/hosting.ts; dipertahankan di sini supaya import lama
+ * dari komponen tetap jalan.)
+ */
 export function demoLink(d: Demo): string {
-  return `muse-demo-hub/demo/${d.id}`;
+  return resolveLink(d);
 }

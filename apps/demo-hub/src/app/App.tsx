@@ -2,11 +2,13 @@ import { useCallback, useEffect, useRef, useState } from "react";
 import { demos, type Demo } from "@workflow-tools/data";
 import { Toast } from "@workflow-tools/ui";
 import { Hero } from "../components/Hero";
+import { HostingPicker } from "../components/HostingPicker";
 import { Toolbar } from "../components/Toolbar";
 import { DemoCard, type DemoAction } from "../components/DemoCard";
 import { HowItWorks, LanguageGrid, ThemeLegend } from "../components/Sections";
 import { Modals } from "../components/Modals";
 import { matchesDemo, sortDemos, type DemoSort } from "../lib/filter";
+import { getDefaultHostingId } from "../lib/hosting";
 
 /**
  * Muse Demo Hub — komposisi halaman.
@@ -18,7 +20,8 @@ export function App() {
   const [query, setQuery] = useState("");
   const [sort, setSort] = useState<DemoSort>("baru");
   const [current, setCurrent] = useState<Demo | null>(null);
-  const [modal, setModal] = useState<"preview" | "code" | null>(null);
+  const [modal, setModal] = useState<"preview" | null>(null);
+  const [defaultHostingId, setDefaultHostingId] = useState(() => getDefaultHostingId());
   const [toastMsg, setToastMsg] = useState("");
   const toastTimer = useRef<number | undefined>(undefined);
 
@@ -66,6 +69,7 @@ export function App() {
   return (
     <div className="wrap">
       <Hero />
+      <HostingPicker onDefaultChange={() => setDefaultHostingId(getDefaultHostingId())} />
       <Toolbar
         query={query}
         onQueryChange={setQuery}
@@ -79,7 +83,13 @@ export function App() {
       <main>
         <div className="grid" id="demoGrid">
           {list.map((d) => (
-            <DemoCard key={d.id} demo={d} onAction={openAction} showToast={showToast} />
+            <DemoCard
+              key={d.id}
+              demo={d}
+              onAction={openAction}
+              showToast={showToast}
+              defaultHostingId={defaultHostingId}
+            />
           ))}
         </div>
         <div className={`empty${list.length === 0 ? " show" : ""}`} id="emptyState">
@@ -106,7 +116,6 @@ export function App() {
           setModal(null);
           setCurrent(null);
         }}
-        onSwitch={(m) => setModal(m)}
         showToast={showToast}
       />
       <Toast message={toastMsg} />

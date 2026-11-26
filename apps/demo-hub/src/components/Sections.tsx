@@ -103,8 +103,8 @@ export function HowItWorks() {
           <span className="num">LANGKAH 03</span>
           <h3>Demo tampil di hub ini</h3>
           <p>
-            Hasilnya jadi kartu baru di halaman ini, lengkap dengan prompt aslinya, stack yang dipakai, tombol
-            preview, kode, dan link.
+            Hasilnya jadi kartu baru di halaman ini, lengkap dengan prompt aslinya, stack yang dipakai, pilihan
+            hosting, dan kolom custom link buat link demo versi kamu sendiri.
           </p>
         </div>
       </div>

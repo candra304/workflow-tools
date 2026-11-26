@@ -16,8 +16,8 @@ export function Hero() {
       </h1>
       <p className="hero-sub">
         Kamu kasih perintah lewat aplikasi Muse, perintah itu dieksekusi di berbagai tools di balik layar —{" "}
-        <strong>hasil jadinya muncul di sini</strong> sebagai demo yang bisa langsung dibuka, dilihat kodenya, dan
-        dibagikan link-nya.
+        <strong>hasil jadinya muncul di sini</strong> sebagai demo yang bisa langsung dibuka lewat hosting
+        pilihanmu, lengkap dengan prompt, stack, dan tanggalnya.
       </p>
       <div className="stats">
         <div className="stat">

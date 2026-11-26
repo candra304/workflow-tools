@@ -11,6 +11,7 @@ import toolsJson from "../tools.json";
 import patternsJson from "../patterns.json";
 import nichesJson from "../niches.json";
 import demosJson from "../demos.json";
+import hostingsJson from "../hostings.json";
 import languagesJson from "../languages.json";
 import themesJson from "../themes.json";
 
@@ -130,8 +131,15 @@ export interface Demo {
   cat: string;
   theme: DemoTheme;
   thumb: ThumbType;
-  codeLang: string;
-  code: string;
+}
+
+/** Hosting gratisan populer — dipakai Demo Hub sebagai pilihan deploy. */
+export interface Hosting {
+  id: string;
+  name: string;
+  url: string;
+  /** catatan paket gratis, 1 baris */
+  note: string;
 }
 
 export interface Language {
@@ -167,6 +175,10 @@ export const patterns: Pattern[] = patternsData.patterns;
 export const nichesData: NichesData = nichesJson as NichesData;
 export const niches: Niche[] = nichesData.niches;
 export const demos: Demo[] = demosJson as Demo[];
+export const hostings: Hosting[] = hostingsJson as Hosting[];
+/** Cari hosting berdasarkan id — null kalau id tidak dikenal. */
+export const findHosting = (id: string): Hosting | null =>
+  hostings.find((h) => h.id === id) ?? null;
 export const languagesData: LanguagesData = languagesJson as LanguagesData;
 export const languages: Language[] = languagesData.languages;
 export const demoFilters: string[] = languagesData.filters;

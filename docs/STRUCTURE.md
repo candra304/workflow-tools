@@ -38,11 +38,13 @@ workflow-tools-proper/
 │           ├── components/
 │           │   ├── Hero.tsx        # statistik demo & bahasa (dari data)
 │           │   ├── Toolbar.tsx     # cari + urutan + chip filter + hasil
-│           │   ├── DemoCard.tsx    # 1 kartu demo + Lihat Demo/Kode/Salin Link
+│           │   ├── DemoCard.tsx    # 1 kartu demo + Lihat Demo/Salin Link + hosting & Custom Link
+│           │   ├── HostingPicker.tsx # bagian "Pilih Hosting" — 10 hosting gratisan
 │           │   ├── Sections.tsx    # ThemeLegend + LanguageGrid + HowItWorks
-│           │   └── Modals.tsx      # modal Lihat Demo + modal Lihat Kode
+│           │   └── Modals.tsx      # modal Lihat Demo (preview + info hosting)
 │           ├── lib/
 │           │   ├── filter.ts   # matchesDemo() / sortDemos() / demoLink()
+│           │   ├── hosting.ts  # hosting default/per-demo + Custom Link (localStorage)
 │           │   └── thumb.tsx   # ThumbArt — miniatur abstrak per demo
 │           └── styles/app.css  # gaya app (tema per demo dari data)
 ├── packages/
@@ -50,7 +52,8 @@ workflow-tools-proper/
 │   │   ├── tools.json      # 42 tools/referensi (semua field kartu)
 │   │   ├── patterns.json   # 4 pola + categories + categoryThemes + patternNames
 │   │   ├── niches.json     # 5 niche + 43 item + checkedLabel
-│   │   ├── demos.json      # 8 demo (judul, prompt, stack, tema, kode)
+│   │   ├── demos.json      # 8 demo (judul, prompt, stack, tema — TANPA kode)
+│   │   ├── hostings.json   # 10 hosting gratisan (id, nama, url, catatan gratis)
 │   │   ├── languages.json  # 10 bahasa/stack + 9 filter
 │   │   ├── themes.json     # legenda tema per niche (2 app)
 │   │   └── src/index.ts    # tipe TypeScript + export bernama
@@ -113,12 +116,12 @@ grep -rE "#b9f73d|#060706" apps/*/src packages/*/src packages/data || echo "BERS
 1. Buka `packages/data/demos.json`, tambah 1 objek — salin bentuk demo lain
    (`id`, `title`, `date`, `dateLabel`, `status`, `desc`, `prompt`,
    `stacks[]`, `cat`, `theme` `{a, soft, line, tbg, on}`, `thumb`
-   salah satu dari `catalog|trading|stock|motion|review|chart`,
-   `codeLang`, `code` cuplikan inti).
+   salah satu dari `catalog|trading|stock|motion|review|chart`).
+   Demo Hub hanya menampilkan demo — JANGAN tambah field kode.
 2. `npm run build:demo-hub` — kartu baru langsung muncul, lengkap dengan
-   tombol Lihat Demo / Lihat Kode / Salin Link, dan ikut terfilter oleh
-   search + chip bahasa (kalau `stacks`-nya mengandung bahasa yang ada
-   di `languages.json`).
+   tombol Lihat Demo / Salin Link, pemilih hosting + kolom Custom Link,
+   dan ikut terfilter oleh search + chip bahasa (kalau `stacks`-nya
+   mengandung bahasa yang ada di `languages.json`).
 3. Commit & push.
 
 ## Cara ubah tema

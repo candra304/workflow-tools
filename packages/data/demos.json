@@ -21,9 +21,7 @@
       "tbg": "#141433",
       "on": "#0d0d24"
     },
-    "thumb": "catalog",
-    "codeLang": "TypeScript · React",
-    "code": "// Pattern Picker → Stack Generator (ringkas)\ntype Pattern = {\n  nama: string;\n  stack: string[]; // optimal 7–9 tools\n};\n\nconst PATTERNS: Pattern[] = [\n  { nama: 'Drive / Explore',\n    stack: ['next','tailwind','three','@react-three/fiber',\n            'gsap','lenis','zustand','lucide-react'] },\n  { nama: 'Scroll Film',\n    stack: ['next','tailwind','gsap','lenis',\n            'motion','lucide-react'] },\n];\n\nexport function generateInstall(p: Pattern) {\n  return 'npm install ' + p.stack.join(' ');\n}\n// Conflict check: 2 UI Kit / 2 set 3D → warning otomatis"
+    "thumb": "catalog"
   },
   {
     "id": "prop-simulator",
@@ -46,9 +44,7 @@
       "tbg": "#0a1830",
       "on": "#191204"
     },
-    "thumb": "trading",
-    "codeLang": "TypeScript · Next.js",
-    "code": "// Kalkulator lot berdasarkan risiko (ringkas)\nfunction hitungLot(balance: number, riskPersen: number,\n                   slPip: number, nilaiPerPip: number) {\n  const risikoUang = balance * (riskPersen / 100);\n  const lot = risikoUang / (slPip * nilaiPerPip);\n  return Math.max(0.01, Math.floor(lot * 100) / 100);\n}\n\n// Contoh: balance $2.500, risk 1%, SL 20 pip\n// → lot 0.05 (sesuai tampilan live Prop Simulator)"
+    "thumb": "trading"
   },
   {
     "id": "stok-harian-kinmart",
@@ -71,9 +67,7 @@
       "tbg": "#2b130c",
       "on": "#260f04"
     },
-    "thumb": "stock",
-    "codeLang": "JavaScript · Vanilla",
-    "code": "// Susun laporan WhatsApp: nama saja, urut A–Z\nfunction laporanWA(items, statusPerItem) {\n  const ready  = items.filter(i => statusPerItem[i] === 'Ready');\n  const kosong = items.filter(i => statusPerItem[i] === 'Kosong');\n  ready.sort(); kosong.sort();\n  return 'READY:\\n' + ready.join('\\n') +\n         '\\n\\nKOSONG:\\n' + kosong.join('\\n');\n}\n\n// Dipakai tiap tutup toko — tanpa Restok, tanpa simbol"
+    "thumb": "stock"
   },
   {
     "id": "muse-motion-studio",
@@ -97,9 +91,7 @@
       "tbg": "#1d1a15",
       "on": "#171410"
     },
-    "thumb": "motion",
-    "codeLang": "JavaScript · Three.js",
-    "code": "// Kubus 3D berputar — demo Three.js di browser\nimport * as THREE from 'three';\n\nconst scene = new THREE.Scene();\nconst geo = new THREE.BoxGeometry(1, 1, 1);\nconst mat = new THREE.MeshStandardMaterial(\n  { color: 0xb6f34a });\nconst cube = new THREE.Mesh(geo, mat);\nscene.add(cube);\n\nfunction animate() {\n  cube.rotation.x += 0.01;\n  cube.rotation.y += 0.013;\n  requestAnimationFrame(animate);\n}"
+    "thumb": "motion"
   },
   {
     "id": "web-review-tool",
@@ -122,9 +114,7 @@
       "tbg": "#141433",
       "on": "#0d0d24"
     },
-    "thumb": "review",
-    "codeLang": "JavaScript · Parser Perintah",
-    "code": "// 1 perintah = tepat 1 perubahan\nconst PERINTAH = {\n  'lime':  el => el.dataset.warna = 'lime',\n  'biru':  el => el.dataset.warna = 'biru',\n  'emas':  el => el.dataset.warna = 'emas',\n  'reset': ()  => location.reload()\n};\n\nfunction jalankan(teks, target) {\n  const fn = PERINTAH[teks.trim().toLowerCase()];\n  if (!fn) { catatDitolak(teks); return; } // ditolak + log\n  fn(target);\n}"
+    "thumb": "review"
   },
   {
     "id": "web-sekolah-kursus",
@@ -147,9 +137,7 @@
       "tbg": "#082a40",
       "on": "#04141f"
     },
-    "thumb": "catalog",
-    "codeLang": "HTML · Struktur Halaman",
-    "code": "<!-- Kartu program belajar -->\n<section class=\"program\">\n  <article class=\"kartu-program\">\n    <h3>Matematika — Kelas 10</h3>\n    <p>Senin & Rabu · 16.00–17.30</p>\n    <a class=\"btn-daftar\" href=\"#daftar\">Daftar Kelas</a>\n  </article>\n</section>\n\n<!-- Biru cerah + putih: kontras tinggi, gampang dibaca -->"
+    "thumb": "catalog"
   },
   {
     "id": "butik-luxury-online",
@@ -172,9 +160,7 @@
       "tbg": "#221a10",
       "on": "#1c1408"
     },
-    "thumb": "motion",
-    "codeLang": "CSS · Tema Luxury",
-    "code": "/* Palet luxury: beige + hitam + emas */\n:root {\n  --beige: #ece3d0;\n  --hitam: #12100c;\n  --emas:  #d8b98a;\n}\n\n.produk h3 {\n  font-family: Georgia, serif; /* editorial */\n  letter-spacing: .04em;\n}\n/* Gerak pelan & lapang = terasa mahal */"
+    "thumb": "motion"
   },
   {
     "id": "backtest-zscore-python",
@@ -195,8 +181,6 @@
       "tbg": "#0a1830",
       "on": "#191204"
     },
-    "thumb": "chart",
-    "codeLang": "Python · pandas",
-    "code": "# Z-Score: entry pertama menyentuh ±2, SL 1.5σ beku\nimport pandas as pd\n\ndf['ma']  = df['close'].rolling(20).mean()\ndf['std'] = df['close'].rolling(20).std()\ndf['z']   = (df['close'] - df['ma']) / df['std']\n\nsinyal = df[(df['z'] <= -2) | (df['z'] >= 2)]\n# RR 1:2 → win 37,5% · net +34,27R (n=619, setelah spread)\n# RR 1:1 → win 51,2% tapi NET MINUS — jangan dipakai live"
+    "thumb": "chart"
   }
 ]
