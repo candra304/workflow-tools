@@ -1,4 +1,4 @@
-import { demos, languages, themesData } from "@workflow-tools/data";
+import { demos, languages, themesData, type Demo } from "@workflow-tools/data";
 
 /** Legenda tema — data dari packages/data/themes.json. */
 export function ThemeLegend() {
@@ -29,9 +29,11 @@ export function ThemeLegend() {
 /**
  * Semua bahasa ditampung — data dari packages/data/languages.json.
  * Klik satu bahasa langsung memfilter demo (bahasa tanpa filter hanya
- * menampilkan "siap dipakai").
+ * menampilkan "siap dipakai"). Hitungan per bahasa memakai semua demo
+ * yang tampil (bawaan + hasil tambahan user).
  */
-export function LanguageGrid({ onFilter }: { onFilter: (f: string) => void }) {
+export function LanguageGrid({ onFilter, demos: allDemos }: { onFilter: (f: string) => void; demos?: Demo[] }) {
+  const shown = allDemos ?? demos;
   return (
     <section className="block" aria-labelledby="langTitle">
       <div className="block-head">
@@ -40,7 +42,7 @@ export function LanguageGrid({ onFilter }: { onFilter: (f: string) => void }) {
       </div>
       <div className="lang-grid" id="langGrid">
         {languages.map((l) => {
-          const count = l.filter ? demos.filter((d) => d.stacks.includes(l.filter!)).length : 0;
+          const count = l.filter ? shown.filter((d) => d.stacks.includes(l.filter!)).length : 0;
           const inner = (
             <>
               <b>

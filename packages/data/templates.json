@@ -1,0 +1,40 @@
+[
+  {
+    "cat": "Pendidikan",
+    "demoId": "sekolah-pondok",
+    "desc": "Template eksklusif dari demo Sekolah Pondok: pola Scroll Film, 6 program, timeline jadwal harian santri, dan form pendaftaran. Hanya dibuat satu kali untuk satu pengambil.",
+    "id": "tpl-pondok-darul-ilmi",
+    "stacks": [
+      "Tailwind",
+      "GSAP + ScrollTrigger",
+      "Lenis",
+      "Lucide",
+      "JavaScript"
+    ],
+    "title": "Template Pondok Pesantren — Darul Ilmi"
+  },
+  {
+    "cat": "Finance / Prop Firm",
+    "demoId": "prop-simulator",
+    "desc": "Template eksklusif landing page firma prop: hero paket challenge, perbandingan paket, dan CTA pendaftaran — navy gelap + emas. Hanya dibuat satu kali untuk satu pengambil.",
+    "id": "tpl-landing-prop-firm",
+    "stacks": [
+      "React / Next.js",
+      "TypeScript",
+      "Tailwind"
+    ],
+    "title": "Template Landing Prop Firm"
+  },
+  {
+    "cat": "E-Commerce Luxury",
+    "demoId": "butik-luxury-online",
+    "desc": "Template eksklusif etalase butik luxury: foto besar, tipografi editorial, palet beige + hitam + emas. Hanya dibuat satu kali untuk satu pengambil.",
+    "id": "tpl-butik-luxury",
+    "stacks": [
+      "React / Next.js",
+      "Tailwind",
+      "CSS"
+    ],
+    "title": "Template Butik Luxury"
+  }
+]

@@ -11,51 +11,51 @@
   ],
   "categoryThemes": {
     "Core React": {
-      "a": "#4f46e5",
-      "d": "#2e2a7a",
-      "s": "#eceafe",
-      "i": "#ffffff"
+      "a": "#818cf8",
+      "d": "#a5b4fc",
+      "s": "#22223d",
+      "i": "#191930"
     },
     "UI Kit": {
-      "a": "#6366f1",
-      "d": "#3730a3",
-      "s": "#eef0fe",
-      "i": "#ffffff"
+      "a": "#a78bfa",
+      "d": "#c4b5fd",
+      "s": "#262040",
+      "i": "#221344"
     },
     "Animasi": {
-      "a": "#e63b25",
-      "d": "#8f1d0d",
-      "s": "#fde9e4",
-      "i": "#ffffff"
+      "a": "#ff6a4d",
+      "d": "#ff9a85",
+      "s": "#381a10",
+      "i": "#2a0f08"
     },
     "3D / WebGL": {
-      "a": "#b8912a",
-      "d": "#102542",
-      "s": "#e6ebf3",
-      "i": "#ffffff"
+      "a": "#e3b341",
+      "d": "#f0cd6a",
+      "s": "#16233c",
+      "i": "#241a05"
     },
     "Scroll & Interaksi": {
-      "a": "#1d1a15",
-      "d": "#1d1a15",
-      "s": "#efe9db",
-      "i": "#f5efe0"
+      "a": "#ece5d3",
+      "d": "#ece5d3",
+      "s": "#26261f",
+      "i": "#1d1a15"
     },
     "Aset Premium": {
-      "a": "#a8822f",
-      "d": "#3a2f14",
-      "s": "#f3ecda",
-      "i": "#ffffff"
+      "a": "#d6b98a",
+      "d": "#e6cfa3",
+      "s": "#2e2417",
+      "i": "#2a1f0d"
     },
     "Referensi Web Live": {
-      "a": "#1a73e8",
-      "d": "#0f3f7d",
-      "s": "#e6f0fd",
-      "i": "#ffffff"
+      "a": "#38bdf8",
+      "d": "#7cc7ff",
+      "s": "#10283f",
+      "i": "#082a3f"
     },
     "Template / Starter": {
-      "a": "#0d5c63",
-      "d": "#083f45",
-      "s": "#e0f0f0",
+      "a": "#14b8a6",
+      "d": "#5eead4",
+      "s": "#0f2b2b",
       "i": "#ffffff"
     }
   },

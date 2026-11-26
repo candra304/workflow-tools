@@ -26,11 +26,14 @@ export type DemoAction = "preview";
 export function DemoCard({
   demo,
   onAction,
+  onDelete,
   showToast,
   defaultHostingId,
 }: {
   demo: Demo;
   onAction: (action: DemoAction, demo: Demo) => void;
+  /** Hanya dipakai kartu hasil tambahan user (demo.custom) — hapus 2x klik. */
+  onDelete?: (demo: Demo) => void;
   showToast: (msg: string) => void;
   /** id hosting default saat ini — berubah saat user ganti di "Pilih Hosting" */
   defaultHostingId: string;
@@ -39,6 +42,8 @@ export function DemoCard({
   const [hostSel, setHostSel] = useState(() => getDemoHostingId(demo.id));
   const [customInput, setCustomInput] = useState(() => getCustomLink(demo.id));
   const [savedCustom, setSavedCustom] = useState(() => getCustomLink(demo.id));
+  /** Konfirmasi hapus hasil tambahan: klik pertama mempersenjatai tombol. */
+  const [deleteArmed, setDeleteArmed] = useState(false);
 
   const effective = getEffectiveHosting(demo.id);
   const statusCls = demo.status === "Live" ? "" : " proses";
@@ -92,6 +97,16 @@ export function DemoCard({
     setHostSel(value);
     const h = getEffectiveHosting(demo.id);
     showToast(`Hosting demo ini: ${h.name}`);
+  };
+
+  const handleDelete = () => {
+    if (!onDelete) return;
+    if (!deleteArmed) {
+      setDeleteArmed(true);
+      showToast("Klik sekali lagi untuk menghapus hasil ini");
+      return;
+    }
+    onDelete(demo);
   };
 
   return (
@@ -203,6 +218,15 @@ export function DemoCard({
               <path d="M14 10a5 5 0 0 0-7 0l-3 3a5 5 0 0 0 7 7l1.7-1.7" />
             </svg>
           </button>
+          {demo.custom && onDelete ? (
+            <button
+              className={`btn btn-danger${deleteArmed ? " armed" : ""}`}
+              type="button"
+              onClick={handleDelete}
+            >
+              {deleteArmed ? "Yakin hapus?" : "Hapus"}
+            </button>
+          ) : null}
         </div>
       </div>
     </article>

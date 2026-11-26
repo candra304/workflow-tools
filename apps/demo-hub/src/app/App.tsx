@@ -1,4 +1,4 @@
-import { useCallback, useEffect, useRef, useState } from "react";
+import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { demos, type Demo } from "@workflow-tools/data";
 import { Toast } from "@workflow-tools/ui";
 import { Hero } from "../components/Hero";
@@ -6,14 +6,19 @@ import { HostingPicker } from "../components/HostingPicker";
 import { Toolbar } from "../components/Toolbar";
 import { DemoCard, type DemoAction } from "../components/DemoCard";
 import { HowItWorks, LanguageGrid, ThemeLegend } from "../components/Sections";
+import { TemplateSection } from "../components/TemplateSection";
+import { AddResultModal } from "../components/AddResultModal";
 import { Modals } from "../components/Modals";
 import { matchesDemo, sortDemos, type DemoSort } from "../lib/filter";
-import { getDefaultHostingId } from "../lib/hosting";
+import { deleteCustomLink, getDefaultHostingId } from "../lib/hosting";
+import { loadUserDemos, saveUserDemos } from "../lib/userDemos";
 
 /**
  * Muse Demo Hub — komposisi halaman.
  * State (filter, cari, urutan, modal) tinggal di sini; data dibaca
  * dari @workflow-tools/data (demos.json / languages.json / themes.json).
+ * Hasil tambahan user dimuat dari localStorage (mdh_user_demos) dan
+ * digabung di depan demo bawaan — 9 demo bawaan tidak pernah diubah.
  */
 export function App() {
   const [filter, setFilter] = useState("Semua");
@@ -21,9 +26,15 @@ export function App() {
   const [sort, setSort] = useState<DemoSort>("baru");
   const [current, setCurrent] = useState<Demo | null>(null);
   const [modal, setModal] = useState<"preview" | null>(null);
+  const [addOpen, setAddOpen] = useState(false);
   const [defaultHostingId, setDefaultHostingId] = useState(() => getDefaultHostingId());
   const [toastMsg, setToastMsg] = useState("");
   const toastTimer = useRef<number | undefined>(undefined);
+
+  const builtinIds = useMemo(() => new Set(demos.map((d) => d.id)), []);
+  const [userDemos, setUserDemos] = useState<Demo[]>(() => loadUserDemos(builtinIds));
+
+  const allDemos = useMemo(() => [...userDemos, ...demos], [userDemos, demos]);
 
   const showToast = useCallback((msg: string) => {
     setToastMsg(msg);
@@ -38,6 +49,7 @@ export function App() {
       if (e.key === "Escape") {
         setModal(null);
         setCurrent(null);
+        setAddOpen(false);
       }
     };
     document.addEventListener("keydown", onKey);
@@ -45,14 +57,14 @@ export function App() {
   }, []);
 
   useEffect(() => {
-    document.body.style.overflow = modal ? "hidden" : "";
+    document.body.style.overflow = modal || addOpen ? "hidden" : "";
     return () => {
       document.body.style.overflow = "";
     };
-  }, [modal]);
+  }, [modal, addOpen]);
 
   const list = sortDemos(
-    demos.filter((d) => matchesDemo(d, filter, query.trim().toLowerCase())),
+    allDemos.filter((d) => matchesDemo(d, filter, query.trim().toLowerCase())),
     sort,
   );
 
@@ -61,6 +73,48 @@ export function App() {
     setModal(action);
   }, []);
 
+  const openPreview = useCallback((demo: Demo) => {
+    setCurrent(demo);
+    setModal("preview");
+  }, []);
+
+  const findDemo = useCallback(
+    (id: string): Demo | null => allDemos.find((d) => d.id === id) ?? null,
+    [allDemos],
+  );
+
+  const handleAdded = useCallback(
+    (demo: Demo) => {
+      setUserDemos((prev) => {
+        const next = [demo, ...prev];
+        saveUserDemos(next);
+        return next;
+      });
+      setAddOpen(false);
+      setQuery("");
+      setFilter("Semua");
+    },
+    [],
+  );
+
+  const handleDeleteUserDemo = useCallback(
+    (demo: Demo) => {
+      setUserDemos((prev) => {
+        const next = prev.filter((d) => d.id !== demo.id);
+        saveUserDemos(next);
+        return next;
+      });
+      deleteCustomLink(demo.id);
+      try {
+        localStorage.removeItem(`mdh_host_${demo.id}`);
+      } catch {
+        /* abaikan */
+      }
+      showToast(`Hasil "${demo.title}" dihapus`);
+    },
+    [showToast],
+  );
+
   const resetFilter = useCallback(() => {
     setQuery("");
     setFilter("Semua");
@@ -68,7 +122,7 @@ export function App() {
 
   return (
     <div className="wrap">
-      <Hero />
+      <Hero demoCount={allDemos.length} onAdd={() => setAddOpen(true)} />
       <HostingPicker onDefaultChange={() => setDefaultHostingId(getDefaultHostingId())} />
       <Toolbar
         query={query}
@@ -78,7 +132,7 @@ export function App() {
         filter={filter}
         onFilterChange={setFilter}
         shown={list.length}
-        total={demos.length}
+        total={allDemos.length}
       />
       <main>
         <div className="grid" id="demoGrid">
@@ -87,6 +141,7 @@ export function App() {
               key={d.id}
               demo={d}
               onAction={openAction}
+              onDelete={d.custom ? handleDeleteUserDemo : undefined}
               showToast={showToast}
               defaultHostingId={defaultHostingId}
             />
@@ -99,8 +154,9 @@ export function App() {
             Reset Filter
           </button>
         </div>
+        <TemplateSection onOpenDemo={openPreview} findDemo={findDemo} showToast={showToast} />
         <ThemeLegend />
-        <LanguageGrid onFilter={setFilter} />
+        <LanguageGrid onFilter={setFilter} demos={allDemos} />
         <HowItWorks />
       </main>
       <footer>
@@ -116,6 +172,12 @@ export function App() {
           setModal(null);
           setCurrent(null);
         }}
+        showToast={showToast}
+      />
+      <AddResultModal
+        open={addOpen}
+        onClose={() => setAddOpen(false)}
+        onAdded={handleAdded}
         showToast={showToast}
       />
       <Toast message={toastMsg} />

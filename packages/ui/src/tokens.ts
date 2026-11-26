@@ -11,43 +11,43 @@ export type { ThemeVars };
 
 /** Tema per kategori katalog — sumber: packages/data/patterns.json (categoryThemes). */
 export const CATEGORY_THEMES: Record<string, ThemeVars> = {
-  "Core React": { a: "#4f46e5", d: "#2e2a7a", s: "#eceafe", i: "#ffffff" },
-  "UI Kit": { a: "#6366f1", d: "#3730a3", s: "#eef0fe", i: "#ffffff" },
-  Animasi: { a: "#e63b25", d: "#8f1d0d", s: "#fde9e4", i: "#ffffff" },
-  "3D / WebGL": { a: "#b8912a", d: "#102542", s: "#e6ebf3", i: "#ffffff" },
-  "Scroll & Interaksi": { a: "#1d1a15", d: "#1d1a15", s: "#efe9db", i: "#f5efe0" },
-  "Aset Premium": { a: "#a8822f", d: "#3a2f14", s: "#f3ecda", i: "#ffffff" },
-  "Referensi Web Live": { a: "#1a73e8", d: "#0f3f7d", s: "#e6f0fd", i: "#ffffff" },
-  "Template / Starter": { a: "#0d5c63", d: "#083f45", s: "#e0f0f0", i: "#ffffff" },
+  "Core React": { a: "#818cf8", d: "#a5b4fc", s: "#22223d", i: "#191930" },
+  "UI Kit": { a: "#a78bfa", d: "#c4b5fd", s: "#262040", i: "#221344" },
+  Animasi: { a: "#ff6a4d", d: "#ff9a85", s: "#381a10", i: "#2a0f08" },
+  "3D / WebGL": { a: "#e3b341", d: "#f0cd6a", s: "#16233c", i: "#241a05" },
+  "Scroll & Interaksi": { a: "#ece5d3", d: "#ece5d3", s: "#26261f", i: "#1d1a15" },
+  "Aset Premium": { a: "#d6b98a", d: "#e6cfa3", s: "#2e2417", i: "#2a1f0d" },
+  "Referensi Web Live": { a: "#38bdf8", d: "#7cc7ff", s: "#10283f", i: "#082a3f" },
+  "Template / Starter": { a: "#14b8a6", d: "#5eead4", s: "#0f2b2b", i: "#ffffff" }
 };
 
 /** Tema per pola (class `.pattern--*` di theme.css memakai nilai yang sama). */
 export const PATTERN_THEMES: Record<string, ThemeVars> = {
-  drive: { a: "#0d5c63", d: "#083f45", s: "#e0f0f0", i: "#ffffff" },
-  scroll: { a: "#1d1a15", d: "#1d1a15", s: "#efe9db", i: "#f5efe0" },
-  config: { a: "#a8822f", d: "#3a2f14", s: "#f3ecda", i: "#ffffff" },
-  game: { a: "#e63b25", d: "#8f1d0d", s: "#fde9e4", i: "#ffffff" },
+  drive: { a: "#14b8a6", d: "#5eead4", s: "#0f2b2b", i: "#ffffff" },
+  scroll: { a: "#ece5d3", d: "#ece5d3", s: "#26261f", i: "#1d1a15" },
+  config: { a: "#e3b341", d: "#f0cd6a", s: "#2a2110", i: "#241a05" },
+  game: { a: "#ff6a4d", d: "#ff9a85", s: "#381a10", i: "#2a0f08" }
 };
 
 /** Tema per niche (class `.niche-block[data-niche]` di theme.css). */
 export const NICHE_THEMES: Record<string, ThemeVars> = {
-  finance: { a: "#b8912a", d: "#102542", s: "#e6ebf3", i: "#ffffff" },
-  portfolio: { a: "#1d1a15", d: "#1d1a15", s: "#efe9db", i: "#f5efe0" },
-  ecommerce: { a: "#e63b25", d: "#8f1d0d", s: "#fde9e4", i: "#ffffff" },
-  pendidikan: { a: "#1a73e8", d: "#0f3f7d", s: "#e6f0fd", i: "#ffffff" },
-  lainnya: { a: "#4f46e5", d: "#2e2a7a", s: "#eceafe", i: "#ffffff" },
+  finance: { a: "#e3b341", d: "#f0cd6a", s: "#16233c", i: "#241a05" },
+  portfolio: { a: "#ece5d3", d: "#ece5d3", s: "#26261f", i: "#1d1a15" },
+  ecommerce: { a: "#ff6a4d", d: "#ff9a85", s: "#381a10", i: "#2a0f08" },
+  pendidikan: { a: "#38bdf8", d: "#7cc7ff", s: "#10283f", i: "#082a3f" },
+  lainnya: { a: "#818cf8", d: "#a5b4fc", s: "#22223d", i: "#191930" }
 };
 
 /** Tema per sub-grup niche (atribut `data-theme` di theme.css). */
 export const SUBGROUP_THEMES: Record<string, ThemeVars> = {
-  luxury: { a: "#a8822f", d: "#3a2f14", s: "#f3ecda", i: "#ffffff" },
-  challenger: { a: "#e63b25", d: "#8f1d0d", s: "#fde9e4", i: "#ffffff" },
-  saas: { a: "#4f46e5", d: "#2e2a7a", s: "#eceafe", i: "#ffffff" },
-  edu: { a: "#1a73e8", d: "#0f3f7d", s: "#e6f0fd", i: "#ffffff" },
-  editorial: { a: "#1d1a15", d: "#1d1a15", s: "#efe9db", i: "#f5efe0" },
-  finance: { a: "#b8912a", d: "#102542", s: "#e6ebf3", i: "#ffffff" },
-  drive: { a: "#0d5c63", d: "#083f45", s: "#e0f0f0", i: "#ffffff" },
-  health: { a: "#2e7d6b", d: "#17493e", s: "#e2f1ec", i: "#ffffff" },
+  luxury: { a: "#d6b98a", d: "#e6cfa3", s: "#2e2417", i: "#2a1f0d" },
+  challenger: { a: "#ff6a4d", d: "#ff9a85", s: "#381a10", i: "#2a0f08" },
+  saas: { a: "#818cf8", d: "#a5b4fc", s: "#22223d", i: "#191930" },
+  edu: { a: "#38bdf8", d: "#7cc7ff", s: "#10283f", i: "#082a3f" },
+  editorial: { a: "#ece5d3", d: "#ece5d3", s: "#26261f", i: "#1d1a15" },
+  finance: { a: "#e3b341", d: "#f0cd6a", s: "#16233c", i: "#241a05" },
+  drive: { a: "#14b8a6", d: "#5eead4", s: "#0f2b2b", i: "#ffffff" },
+  health: { a: "#34a186", d: "#8fe0cb", s: "#122b25", i: "#ffffff" }
 };
 
 /** Label sub-grup niche -> kunci tema (dulu fungsi `subTheme()`). */

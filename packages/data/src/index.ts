@@ -11,6 +11,7 @@ import toolsJson from "../tools.json";
 import patternsJson from "../patterns.json";
 import nichesJson from "../niches.json";
 import demosJson from "../demos.json";
+import templatesJson from "../templates.json";
 import hostingsJson from "../hostings.json";
 import languagesJson from "../languages.json";
 import themesJson from "../themes.json";
@@ -131,6 +132,23 @@ export interface Demo {
   cat: string;
   theme: DemoTheme;
   thumb: ThumbType;
+  /** true = hasil tambahan user (bukan demo bawaan); tersimpan di localStorage */
+  custom?: boolean;
+}
+
+/**
+ * Template eksklusif 1 of 1 — hanya dibuat SEKALI, tidak ada tombol
+ * duplikat/salin/copy. Status diambil & konfirmasi follow tersimpan di
+ * localStorage browser pengunjung (lihat apps/demo-hub/src/lib/templates.ts).
+ */
+export interface Template {
+  id: string;
+  title: string;
+  cat: string;
+  desc: string;
+  stacks: string[];
+  /** id demo bawaan yang dibuka tombol "Buka Template" (preview demo) */
+  demoId: string;
 }
 
 /** Hosting gratisan populer — dipakai Demo Hub sebagai pilihan deploy. */
@@ -175,6 +193,10 @@ export const patterns: Pattern[] = patternsData.patterns;
 export const nichesData: NichesData = nichesJson as NichesData;
 export const niches: Niche[] = nichesData.niches;
 export const demos: Demo[] = demosJson as Demo[];
+export const templates: Template[] = templatesJson as Template[];
+/** Cari template eksklusif berdasarkan id — null kalau id tidak dikenal. */
+export const findTemplate = (id: string): Template | null =>
+  templates.find((t) => t.id === id) ?? null;
 export const hostings: Hosting[] = hostingsJson as Hosting[];
 /** Cari hosting berdasarkan id — null kalau id tidak dikenal. */
 export const findHosting = (id: string): Hosting | null =>
