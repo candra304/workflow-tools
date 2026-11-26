@@ -1,0 +1,7 @@
+node_modules/
+dist/
+.next/
+out/
+*.tsbuildinfo
+*.local
+.DS_Store

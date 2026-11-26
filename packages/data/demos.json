@@ -1,0 +1,202 @@
+[
+  {
+    "id": "workflow-tools",
+    "title": "Workflow Tools",
+    "date": "2026-11-26",
+    "dateLabel": "26 Nov 2026",
+    "status": "Live",
+    "desc": "Katalog 28 tools + 14 referensi web premium dalam 8 kategori, lengkap dengan Pattern Picker 4 pola super interaktif dan Stack Generator yang mengeluarkan perintah install optimal 7–9 tools per build.",
+    "prompt": "Bangun Workflow Tools: katalog semua sumber web premium (React, 3D, animasi, UI) yang bisa dicari dan difilter, ada pattern picker dan generator stack biar tiap build tetap ramping.",
+    "stacks": [
+      "React / Next.js",
+      "TypeScript",
+      "Tailwind",
+      "JavaScript"
+    ],
+    "cat": "SaaS / Tools",
+    "theme": {
+      "a": "#8b93ff",
+      "soft": "rgba(139,147,255,.13)",
+      "line": "rgba(139,147,255,.45)",
+      "tbg": "#141433",
+      "on": "#0d0d24"
+    },
+    "thumb": "catalog",
+    "codeLang": "TypeScript · React",
+    "code": "// Pattern Picker → Stack Generator (ringkas)\ntype Pattern = {\n  nama: string;\n  stack: string[]; // optimal 7–9 tools\n};\n\nconst PATTERNS: Pattern[] = [\n  { nama: 'Drive / Explore',\n    stack: ['next','tailwind','three','@react-three/fiber',\n            'gsap','lenis','zustand','lucide-react'] },\n  { nama: 'Scroll Film',\n    stack: ['next','tailwind','gsap','lenis',\n            'motion','lucide-react'] },\n];\n\nexport function generateInstall(p: Pattern) {\n  return 'npm install ' + p.stack.join(' ');\n}\n// Conflict check: 2 UI Kit / 2 set 3D → warning otomatis"
+  },
+  {
+    "id": "prop-simulator",
+    "title": "Prop Simulator",
+    "date": "2026-11-26",
+    "dateLabel": "26 Nov 2026",
+    "status": "Live",
+    "desc": "Simulator akun prop firm: 7 firma, 137 paket, kalkulator lot, Buy/Sell ala MT5, histori & kalender trade, dan analisis — dibangun ulang v3.0 dengan Next.js + React Bits.",
+    "prompt": "Rebuild Prop Simulator jadi Next.js + React Bits + Tailwind, navy gelap + emas, ada Lanyard CANDRA PUTRA, data paket dari situs resmi tiap prop firm, dan live tracking fitur yang dibangun.",
+    "stacks": [
+      "React / Next.js",
+      "TypeScript",
+      "Tailwind"
+    ],
+    "cat": "Finance / Prop Firm",
+    "theme": {
+      "a": "#e3b341",
+      "soft": "rgba(227,179,65,.13)",
+      "line": "rgba(227,179,65,.45)",
+      "tbg": "#0a1830",
+      "on": "#191204"
+    },
+    "thumb": "trading",
+    "codeLang": "TypeScript · Next.js",
+    "code": "// Kalkulator lot berdasarkan risiko (ringkas)\nfunction hitungLot(balance: number, riskPersen: number,\n                   slPip: number, nilaiPerPip: number) {\n  const risikoUang = balance * (riskPersen / 100);\n  const lot = risikoUang / (slPip * nilaiPerPip);\n  return Math.max(0.01, Math.floor(lot * 100) / 100);\n}\n\n// Contoh: balance $2.500, risk 1%, SL 20 pip\n// → lot 0.05 (sesuai tampilan live Prop Simulator)"
+  },
+  {
+    "id": "stok-harian-kinmart",
+    "title": "Stok Harian Kinmart",
+    "date": "2026-11-24",
+    "dateLabel": "24 Nov 2026",
+    "status": "Live",
+    "desc": "Cek stok harian 94 item sayur & lauk: tandai Ready / Kosong per tanggal, lalu kirim laporan ke bos lewat WhatsApp sebagai daftar nama urut A–Z. Tema Neon Elite, 1 item per baris.",
+    "prompt": "Buat web stok harian Kinmart: 94 item, status Ready/Kosong saja per tanggal, ada Undo, dan hasil akhirnya bisa dikirim ke WhatsApp bos sebagai daftar nama urut A–Z.",
+    "stacks": [
+      "HTML",
+      "CSS",
+      "JavaScript"
+    ],
+    "cat": "E-Commerce Challenger",
+    "theme": {
+      "a": "#ff7a59",
+      "soft": "rgba(255,122,89,.13)",
+      "line": "rgba(255,122,89,.45)",
+      "tbg": "#2b130c",
+      "on": "#260f04"
+    },
+    "thumb": "stock",
+    "codeLang": "JavaScript · Vanilla",
+    "code": "// Susun laporan WhatsApp: nama saja, urut A–Z\nfunction laporanWA(items, statusPerItem) {\n  const ready  = items.filter(i => statusPerItem[i] === 'Ready');\n  const kosong = items.filter(i => statusPerItem[i] === 'Kosong');\n  ready.sort(); kosong.sort();\n  return 'READY:\\n' + ready.join('\\n') +\n         '\\n\\nKOSONG:\\n' + kosong.join('\\n');\n}\n\n// Dipakai tiap tutup toko — tanpa Restok, tanpa simbol"
+  },
+  {
+    "id": "muse-motion-studio",
+    "title": "Muse Motion Studio",
+    "date": "2026-11-25",
+    "dateLabel": "25 Nov 2026",
+    "status": "Live",
+    "desc": "Studio gerak di browser tanpa GPU: demo live anime.js, matter-js, Three.js, dan Tone.js, plus katalog 14 repo motion dan papan proyek dari Ide sampai Selesai.",
+    "prompt": "Buat Muse Motion Studio dari riset 14 repo gratis: ada demo live animasi, fisika, 3D, dan audio di browser, katalog repo + lisensinya, dan pipeline produksi 5 tahap.",
+    "stacks": [
+      "JavaScript",
+      "Three.js",
+      "HTML",
+      "CSS"
+    ],
+    "cat": "Portfolio",
+    "theme": {
+      "a": "#ece4d1",
+      "soft": "rgba(236,228,209,.12)",
+      "line": "rgba(236,228,209,.42)",
+      "tbg": "#1d1a15",
+      "on": "#171410"
+    },
+    "thumb": "motion",
+    "codeLang": "JavaScript · Three.js",
+    "code": "// Kubus 3D berputar — demo Three.js di browser\nimport * as THREE from 'three';\n\nconst scene = new THREE.Scene();\nconst geo = new THREE.BoxGeometry(1, 1, 1);\nconst mat = new THREE.MeshStandardMaterial(\n  { color: 0xb6f34a });\nconst cube = new THREE.Mesh(geo, mat);\nscene.add(cube);\n\nfunction animate() {\n  cube.rotation.x += 0.01;\n  cube.rotation.y += 0.013;\n  requestAnimationFrame(animate);\n}"
+  },
+  {
+    "id": "web-review-tool",
+    "title": "Web Review Tool",
+    "date": "2026-11-26",
+    "dateLabel": "26 Nov 2026",
+    "status": "Live",
+    "desc": "Alat review desain super simple: 1 palet tetap, 9 kata kunci perintah langsung (tambah kartu, ganti warna, judul:, reset), dan checklist review 33 item dalam 5 kategori.",
+    "prompt": "Sederhanakan Web Review Tool: satu halaman lurus, perintah satu kata kunci = satu perubahan persis, perintah tak dikenal ditolak dan dicatat, review dinilai dari checklist 33 item.",
+    "stacks": [
+      "HTML",
+      "CSS",
+      "JavaScript"
+    ],
+    "cat": "SaaS / Tools",
+    "theme": {
+      "a": "#8b93ff",
+      "soft": "rgba(139,147,255,.13)",
+      "line": "rgba(139,147,255,.45)",
+      "tbg": "#141433",
+      "on": "#0d0d24"
+    },
+    "thumb": "review",
+    "codeLang": "JavaScript · Parser Perintah",
+    "code": "// 1 perintah = tepat 1 perubahan\nconst PERINTAH = {\n  'lime':  el => el.dataset.warna = 'lime',\n  'biru':  el => el.dataset.warna = 'biru',\n  'emas':  el => el.dataset.warna = 'emas',\n  'reset': ()  => location.reload()\n};\n\nfunction jalankan(teks, target) {\n  const fn = PERINTAH[teks.trim().toLowerCase()];\n  if (!fn) { catatDitolak(teks); return; } // ditolak + log\n  fn(target);\n}"
+  },
+  {
+    "id": "web-sekolah-kursus",
+    "title": "Web Sekolah & Kursus Online",
+    "date": "2026-11-23",
+    "dateLabel": "23 Nov 2026",
+    "status": "Contoh",
+    "desc": "Contoh demo niche pendidikan: halaman sekolah / kursus dengan jadwal kelas, daftar program, dan tombol daftar — tampil bersih biru cerah + putih biar gampang dibaca wali murid & siswa.",
+    "prompt": "Buatkan contoh web sekolah dan kursus online: ada program belajar, jadwal kelas, dan tombol pendaftaran, tampilannya bersih biru cerah + putih.",
+    "stacks": [
+      "HTML",
+      "CSS",
+      "JavaScript"
+    ],
+    "cat": "Pendidikan",
+    "theme": {
+      "a": "#38bdf8",
+      "soft": "rgba(56,189,248,.13)",
+      "line": "rgba(56,189,248,.45)",
+      "tbg": "#082a40",
+      "on": "#04141f"
+    },
+    "thumb": "catalog",
+    "codeLang": "HTML · Struktur Halaman",
+    "code": "<!-- Kartu program belajar -->\n<section class=\"program\">\n  <article class=\"kartu-program\">\n    <h3>Matematika — Kelas 10</h3>\n    <p>Senin & Rabu · 16.00–17.30</p>\n    <a class=\"btn-daftar\" href=\"#daftar\">Daftar Kelas</a>\n  </article>\n</section>\n\n<!-- Biru cerah + putih: kontras tinggi, gampang dibaca -->"
+  },
+  {
+    "id": "butik-luxury-online",
+    "title": "Butik Luxury Online",
+    "date": "2026-11-22",
+    "dateLabel": "22 Nov 2026",
+    "status": "Contoh",
+    "desc": "Contoh demo niche e-commerce luxury: etalase butik dengan foto besar, tipografi editorial, dan palet beige + hitam + emas — pelan, lapang, dan terasa mahal.",
+    "prompt": "Buatkan contoh toko online butik luxury: etalase produk foto besar, tipografi editorial, palet beige + hitam + emas, gerakannya pelan dan elegan.",
+    "stacks": [
+      "React / Next.js",
+      "Tailwind",
+      "CSS"
+    ],
+    "cat": "E-Commerce Luxury",
+    "theme": {
+      "a": "#d8b98a",
+      "soft": "rgba(216,185,138,.13)",
+      "line": "rgba(216,185,138,.45)",
+      "tbg": "#221a10",
+      "on": "#1c1408"
+    },
+    "thumb": "motion",
+    "codeLang": "CSS · Tema Luxury",
+    "code": "/* Palet luxury: beige + hitam + emas */\n:root {\n  --beige: #ece3d0;\n  --hitam: #12100c;\n  --emas:  #d8b98a;\n}\n\n.produk h3 {\n  font-family: Georgia, serif; /* editorial */\n  letter-spacing: .04em;\n}\n/* Gerak pelan & lapang = terasa mahal */"
+  },
+  {
+    "id": "backtest-zscore-python",
+    "title": "Backtest Z-Score M3",
+    "date": "2026-11-25",
+    "dateLabel": "25 Nov 2026",
+    "status": "Selesai",
+    "desc": "Uji strategi Z-Score di XAUUSD M3 (1 Okt – 24 Nov 2026): entry saat z pertama menyentuh ±2, SL 1,5σ beku, TP RR 1:2 — hasil terbaik +34,27R setelah spread dari 619 trade berurutan.",
+    "prompt": "Backtest Z-Score M3 XAUUSD pakai Python: entry z pertama ≤ −2 / ≥ +2, SL = 1,5σ dibekukan, bandingkan RR 1:1, 1:1,5, dan 1:2 setelah spread, tampilkan per bulan dan per minggu.",
+    "stacks": [
+      "Python"
+    ],
+    "cat": "Finance / Prop Firm",
+    "theme": {
+      "a": "#e3b341",
+      "soft": "rgba(227,179,65,.13)",
+      "line": "rgba(227,179,65,.45)",
+      "tbg": "#0a1830",
+      "on": "#191204"
+    },
+    "thumb": "chart",
+    "codeLang": "Python · pandas",
+    "code": "# Z-Score: entry pertama menyentuh ±2, SL 1.5σ beku\nimport pandas as pd\n\ndf['ma']  = df['close'].rolling(20).mean()\ndf['std'] = df['close'].rolling(20).std()\ndf['z']   = (df['close'] - df['ma']) / df['std']\n\nsinyal = df[(df['z'] <= -2) | (df['z'] >= 2)]\n# RR 1:2 → win 37,5% · net +34,27R (n=619, setelah spread)\n# RR 1:1 → win 51,2% tapi NET MINUS — jangan dipakai live"
+  }
+]

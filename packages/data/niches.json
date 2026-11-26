@@ -1,0 +1,797 @@
+{
+  "checkedLabel": "26 Nov 2026",
+  "niches": [
+    {
+      "id": "finance",
+      "name": "Finance / Trade / Prop Firm",
+      "desc": "Bidang kamu banget: dashboard trader, challenge prop firm, dan landing broker. Yang menang di sini adalah data padat yang tetap terasa premium — chart jelas, angka besar, status akun terbaca sekilas.",
+      "stack": [
+        "Next.js",
+        "Tailwind CSS",
+        "shadcn/ui",
+        "Chart (Recharts / TradingView widget)",
+        "GSAP",
+        "Lenis"
+      ],
+      "groups": [
+        {
+          "label": null,
+          "style": null,
+          "stack": null,
+          "items": [
+            {
+              "name": "PropVault",
+              "url": "https://themeforest.net/",
+              "urlLabel": "Lihat di ThemeForest ↗",
+              "price": "Template berbayar",
+              "metric": "Prop Firm & Funded Trader Dashboard",
+              "freshness": 3,
+              "popularity": 900,
+              "badges": [
+                "Trending"
+              ],
+              "pattern": "config",
+              "premium": false,
+              "note": "Template dashboard khusus prop firm: equity curve, drawdown, status challenge — titik mulai tercepat untuk produk sejenis FTMO."
+            },
+            {
+              "name": "FTMO",
+              "url": "https://ftmo.com/",
+              "urlLabel": "ftmo.com ↗",
+              "price": "Web live",
+              "metric": "Prop firm global — patokan industri",
+              "freshness": 2,
+              "popularity": 50000,
+              "badges": [
+                "Top Rated"
+              ],
+              "pattern": "scroll",
+              "premium": false,
+              "note": "Standar emas landing + dashboard prop firm. Pelajari cara mereka menjelaskan challenge, aturan, dan payout dengan sangat jelas."
+            },
+            {
+              "name": "FundedNext",
+              "url": "https://fundednext.com/",
+              "urlLabel": "fundednext.com ↗",
+              "price": "Web live",
+              "metric": "Prop firm populer — pertumbuhan cepat",
+              "freshness": 3,
+              "popularity": 30000,
+              "badges": [
+                "Trending"
+              ],
+              "pattern": "scroll",
+              "premium": false,
+              "note": "Landing agresif dengan social proof & countdown promo — cocok di-ATM untuk gaya marketing prop firm modern."
+            },
+            {
+              "name": "Propanium",
+              "url": "https://propanium.com/",
+              "urlLabel": "propanium.com ↗",
+              "price": "Web live",
+              "metric": "Prop firm — paket FLASH & BOOST",
+              "freshness": 2,
+              "popularity": 5000,
+              "badges": [],
+              "pattern": "scroll",
+              "premium": false,
+              "note": "Prop firm yang paketnya sudah kamu petakan sendiri (FLASH min $2.500, target 8%; BOOST target 5%) — bandingkan penyajian paketnya."
+            },
+            {
+              "name": "Investment",
+              "url": "https://themeforest.net/",
+              "urlLabel": "Lihat di ThemeForest ↗",
+              "price": "Template ThemeForest",
+              "metric": "1.1K sales",
+              "freshness": 1,
+              "popularity": 1100,
+              "badges": [],
+              "pattern": "scroll",
+              "premium": false,
+              "note": "Tema finance/investment serbaguna — aman untuk landing perusahaan investasi & konsultan keuangan."
+            },
+            {
+              "name": "Finovate",
+              "url": "https://themeforest.net/",
+              "urlLabel": "Lihat di ThemeForest ↗",
+              "price": "Template ThemeForest",
+              "metric": "647 sales",
+              "freshness": 1,
+              "popularity": 647,
+              "badges": [],
+              "pattern": "scroll",
+              "premium": false,
+              "note": "Tema fintech ramping untuk startup keuangan & aplikasi pembayaran."
+            },
+            {
+              "name": "Bullion",
+              "url": "https://themeforest.net/",
+              "urlLabel": "Lihat di ThemeForest ↗",
+              "price": "Template ThemeForest",
+              "metric": "Template Forex Broker",
+              "freshness": 2,
+              "popularity": 500,
+              "badges": [
+                "Baru Update"
+              ],
+              "pattern": "config",
+              "premium": false,
+              "note": "Khusus broker forex: tabel spread, jenis akun, dan CTA buka akun live/demo."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "portfolio",
+      "name": "Portfolio",
+      "desc": "Kategori template terbesar — ada 585 template portfolio di marketplace. Di niche ini yang dijual adalah rasa: tipografi, ritme scroll, dan karya yang tampil sebagai pameran, bukan galeri biasa.",
+      "stack": [
+        "Next.js",
+        "Tailwind CSS",
+        "GSAP",
+        "Lenis",
+        "SplitType"
+      ],
+      "groups": [
+        {
+          "label": null,
+          "style": null,
+          "stack": null,
+          "items": [
+            {
+              "name": "Halston",
+              "url": "https://www.awwwwards.com/",
+              "urlLabel": "Lihat di Awwwards ↗",
+              "price": "$99",
+              "metric": "Honorable Mention Awwwards — Juni 2026",
+              "freshness": 3,
+              "popularity": 9900,
+              "badges": [
+                "Awwwards",
+                "Baru Update"
+              ],
+              "pattern": "scroll",
+              "premium": true,
+              "note": "Level penghargaan: portfolio fotografer/desainer dengan transisi sinematik. Patokan “premium” di niche ini."
+            },
+            {
+              "name": "ArcArch",
+              "url": "https://themeforest.net/",
+              "urlLabel": "Lihat di ThemeForest ↗",
+              "price": "$79",
+              "metric": "Skor 9.8/10",
+              "freshness": 2,
+              "popularity": 9800,
+              "badges": [
+                "Top Rated"
+              ],
+              "pattern": "scroll",
+              "premium": false,
+              "note": "Portfolio arsitektur — grid foto besar, ruang kosong lega, cocok untuk studio & arsitek."
+            },
+            {
+              "name": "MOSS",
+              "url": "https://themeforest.net/",
+              "urlLabel": "Lihat di ThemeForest ↗",
+              "price": "$49",
+              "metric": "Skor 9.7/10",
+              "freshness": 2,
+              "popularity": 9700,
+              "badges": [
+                "Top Rated"
+              ],
+              "pattern": "scroll",
+              "premium": false,
+              "note": "Portfolio kreatif minimal dengan skor nyaris sempurna di harga menengah."
+            },
+            {
+              "name": "TITARVL",
+              "url": "https://themeforest.net/",
+              "urlLabel": "Lihat di ThemeForest ↗",
+              "price": "$49",
+              "metric": "Skor 9.7/10",
+              "freshness": 1,
+              "popularity": 9600,
+              "badges": [],
+              "pattern": "scroll",
+              "premium": false,
+              "note": "Portfolio bergaya editorial — tipografi besar & layout majalah."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ecommerce",
+      "name": "Jualan / E-Commerce",
+      "desc": "Niche dengan model paling banyak — dan tiap sub-model beda gaya & beda stack. Dua kutub utamanya: Luxury Restraint (tenang, lega, mahal) vs Challenger Maximalism (berisik, berwarna, berani). Jangan dicampur.",
+      "stack": [
+        "Next.js",
+        "Tailwind CSS",
+        "shadcn/ui",
+        "GSAP / R3F sesuai sub-model"
+      ],
+      "groups": [
+        {
+          "label": "Fashion",
+          "style": "Editorial + budaya drop — rilis terbatas, lookbook sinematik",
+          "stack": "Next.js + Tailwind + GSAP + Lenis",
+          "items": [
+            {
+              "name": "Nike",
+              "url": "https://www.nike.com/",
+              "urlLabel": "nike.com ↗",
+              "price": "Web live",
+              "metric": "Patokan global fashion commerce",
+              "freshness": 2,
+              "popularity": 90000,
+              "badges": [
+                "Top Rated"
+              ],
+              "pattern": "scroll",
+              "premium": false,
+              "note": "Halaman produk sebagai panggung: foto raksasa, cerita atlet, CTA tunggal yang tegas."
+            },
+            {
+              "name": "Kith",
+              "url": "https://kith.com/",
+              "urlLabel": "kith.com ↗",
+              "price": "Web live",
+              "metric": "Streetwear premium — drop culture",
+              "freshness": 2,
+              "popularity": 40000,
+              "badges": [],
+              "pattern": "scroll",
+              "premium": false,
+              "note": "Raffle & drop terbatas sebagai pengalaman — antrian digital yang terasa eksklusif."
+            }
+          ]
+        },
+        {
+          "label": "Beauty",
+          "style": "Bersih, lembut, community-driven — review & UGC di depan",
+          "stack": "Next.js + Tailwind + Motion + Lottie",
+          "items": [
+            {
+              "name": "Glossier",
+              "url": "https://www.glossier.com/",
+              "urlLabel": "glossier.com ↗",
+              "price": "Web live",
+              "metric": "Pionir beauty DTC (direct-to-consumer)",
+              "freshness": 2,
+              "popularity": 35000,
+              "badges": [],
+              "pattern": "scroll",
+              "premium": false,
+              "note": "Pink lembut + bahasa teman sendiri. Bukti beauty tidak harus glamor untuk premium."
+            },
+            {
+              "name": "Sephora",
+              "url": "https://www.sephora.com/",
+              "urlLabel": "sephora.com ↗",
+              "price": "Web live",
+              "metric": "Retail beauty terbesar — katalog raksasa",
+              "freshness": 2,
+              "popularity": 60000,
+              "badges": [
+                "Top Rated"
+              ],
+              "pattern": "config",
+              "premium": false,
+              "note": "Filter shade & skin tone sebagai configurator ringan — pelajaran UX katalog besar."
+            }
+          ]
+        },
+        {
+          "label": "Food & Drink",
+          "style": "Challenger Maximalism — warna tabrak, copy nyeleneh, karakter kuat",
+          "stack": "Next.js + Tailwind + GSAP + React Bits",
+          "items": [
+            {
+              "name": "Poppi",
+              "url": "https://drinkpoppi.com/",
+              "urlLabel": "drinkpoppi.com ↗",
+              "price": "Web live",
+              "metric": "Soda prebiotik — brand challenger",
+              "freshness": 3,
+              "popularity": 25000,
+              "badges": [
+                "Trending"
+              ],
+              "pattern": "scroll",
+              "premium": false,
+              "note": "Setiap rasa = satu warna penuh satu layar. Berani dan langsung dikenali dari jauh."
+            },
+            {
+              "name": "Oatly",
+              "url": "https://www.oatly.com/",
+              "urlLabel": "oatly.com ↗",
+              "price": "Web live",
+              "metric": "Susu oat — copywriting anti-iklan",
+              "freshness": 2,
+              "popularity": 22000,
+              "badges": [],
+              "pattern": "scroll",
+              "premium": false,
+              "note": "Web-nya sendiri adalah lelucon yang disengaja. Pelajaran: suara brand > dekorasi."
+            }
+          ]
+        },
+        {
+          "label": "Elektronik",
+          "style": "Produk hero + scroll cinematic — spesifikasi diceritakan, bukan ditabelkan",
+          "stack": "Next.js + Tailwind + GSAP + ScrollTrigger (+ R3F untuk produk 3D)",
+          "items": [
+            {
+              "name": "Apple",
+              "url": "https://www.apple.com/",
+              "urlLabel": "apple.com ↗",
+              "price": "Web live",
+              "metric": "Standar dunia halaman produk",
+              "freshness": 3,
+              "popularity": 100000,
+              "badges": [
+                "Top Rated"
+              ],
+              "pattern": "config",
+              "premium": false,
+              "note": "Satu produk, satu cerita scroll. Configurator warna/storage-nya adalah referensi wajib pola Configurator."
+            },
+            {
+              "name": "Dyson",
+              "url": "https://www.dyson.com/",
+              "urlLabel": "dyson.com ↗",
+              "price": "Web live",
+              "metric": "Teknologi rumah premium",
+              "freshness": 2,
+              "popularity": 45000,
+              "badges": [],
+              "pattern": "config",
+              "premium": false,
+              "note": "Render produk berputar + potongan mesin (exploded view) — sains dijual sebagai kemewahan."
+            }
+          ]
+        },
+        {
+          "label": "Furniture",
+          "style": "Katalog fungsional + inspirasi ruangan — dua mode dalam satu web",
+          "stack": "Next.js + Tailwind + shadcn/ui + Motion",
+          "items": [
+            {
+              "name": "IKEA",
+              "url": "https://www.ikea.com/",
+              "urlLabel": "ikea.com ↗",
+              "price": "Web live",
+              "metric": "Raksasa furniture global",
+              "freshness": 2,
+              "popularity": 70000,
+              "badges": [
+                "Top Rated"
+              ],
+              "pattern": "config",
+              "premium": false,
+              "note": "Ribuan SKU tetap gampang dicari; halaman ruangan menjual gaya hidup, halaman produk menjual fungsi."
+            }
+          ]
+        },
+        {
+          "label": "Luxury",
+          "style": "Luxury Restraint — ruang kosong, gerak pelan, tanpa diskon, tanpa teriak",
+          "stack": "Next.js + Tailwind + GSAP + Lenis (minimal, presisi)",
+          "items": [
+            {
+              "name": "Bottega Veneta",
+              "url": "https://www.bottegaveneta.com/",
+              "urlLabel": "bottegaveneta.com ↗",
+              "price": "Web live",
+              "metric": "Quiet luxury — tanpa logo besar",
+              "freshness": 2,
+              "popularity": 30000,
+              "badges": [
+                "Awwwards"
+              ],
+              "pattern": "scroll",
+              "premium": true,
+              "note": "Hijau khas + keheningan visual. Kemewahan ditunjukkan dengan menahan diri."
+            },
+            {
+              "name": "Aesop",
+              "url": "https://www.aesop.com/",
+              "urlLabel": "aesop.com ↗",
+              "price": "Web live",
+              "metric": "Skincare arsitektural",
+              "freshness": 2,
+              "popularity": 20000,
+              "badges": [],
+              "pattern": "scroll",
+              "premium": false,
+              "note": "Setiap toko fisik unik, web-nya seketat apotek Swiss. Tipografi & teks produk kelas sastra."
+            },
+            {
+              "name": "Rolex",
+              "url": "https://www.rolex.com/",
+              "urlLabel": "rolex.com ↗",
+              "price": "Web live",
+              "metric": "Jam mewah — tidak jualan online pun tetap patokan",
+              "freshness": 1,
+              "popularity": 38000,
+              "badges": [
+                "Top Rated"
+              ],
+              "pattern": "config",
+              "premium": false,
+              "note": "Configurator jam sebagai ritual, bukan transaksi. Bukti restraint paling ekstrem."
+            }
+          ]
+        },
+        {
+          "label": "Fitness",
+          "style": "Community + athlete-driven — energi tinggi, bukti sosial di mana-mana",
+          "stack": "Next.js + Tailwind + Motion + GSAP",
+          "items": [
+            {
+              "name": "Gymshark",
+              "url": "https://www.gymshark.com/",
+              "urlLabel": "gymshark.com ↗",
+              "price": "Web live",
+              "metric": "Dari garasi jadi brand fitness global",
+              "freshness": 3,
+              "popularity": 42000,
+              "badges": [
+                "Trending"
+              ],
+              "pattern": "scroll",
+              "premium": false,
+              "note": "Atlet & kreator adalah modelnya. Drop produk diperlakukan seperti rilis sneaker."
+            }
+          ]
+        },
+        {
+          "label": "3D Store",
+          "style": "Toko sebagai dunia — pengunjung menjelajah, bukan mengklik katalog",
+          "stack": "Three.js + React Three Fiber + Drei + GSAP + Zustand-style state",
+          "items": [
+            {
+              "name": "KidSuper World",
+              "url": "https://kidsuper.com/",
+              "urlLabel": "kidsuper.com ↗",
+              "price": "Web live",
+              "metric": "Toko 3D interaktif (Three.js)",
+              "freshness": 3,
+              "popularity": 15000,
+              "badges": [
+                "Awwwards",
+                "Trending"
+              ],
+              "pattern": "drive",
+              "premium": true,
+              "note": "Pola Drive/Explore diterapkan ke jualan: masuk ke dunia brand, temukan produk di dalamnya."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pendidikan",
+      "name": "Instansi / Pendidikan",
+      "desc": "Sekolah, kampus, dan kursus online. Pembeli template terbesar di ThemeForest ada di sini — Eduma sendirian 47.7K sales. Kuncinya: katalog kursus rapi, halaman guru, dan LMS yang tidak terasa kuno.",
+      "stack": [
+        "Next.js",
+        "Tailwind CSS",
+        "LMS (LearnDash / Tutor LMS / custom)",
+        "GSAP ringan"
+      ],
+      "groups": [
+        {
+          "label": null,
+          "style": null,
+          "stack": null,
+          "items": [
+            {
+              "name": "Eduma",
+              "url": "https://themeforest.net/",
+              "urlLabel": "Lihat di ThemeForest ↗",
+              "price": "Template ThemeForest",
+              "metric": "47.7K sales — raja tema edukasi",
+              "freshness": 2,
+              "popularity": 47700,
+              "badges": [
+                "Top Rated",
+                "Trending"
+              ],
+              "pattern": "scroll",
+              "premium": false,
+              "note": "Tema pendidikan terlaris sepanjang masa di ThemeForest. Standar fitur: kursus, instruktur, quiz, sertifikat."
+            },
+            {
+              "name": "Unicamp",
+              "url": "https://themeforest.net/",
+              "urlLabel": "Lihat di ThemeForest ↗",
+              "price": "Template ThemeForest",
+              "metric": "1.2K sales",
+              "freshness": 2,
+              "popularity": 1200,
+              "badges": [],
+              "pattern": "scroll",
+              "premium": false,
+              "note": "Khusus universitas & kampus — profil jurusan, berita kampus, penerimaan mahasiswa."
+            },
+            {
+              "name": "Estudiar",
+              "url": "https://themeforest.net/",
+              "urlLabel": "Lihat di ThemeForest ↗",
+              "price": "Template ThemeForest",
+              "metric": "984 sales",
+              "freshness": 1,
+              "popularity": 984,
+              "badges": [],
+              "pattern": "scroll",
+              "premium": false,
+              "note": "Tema edukasi modern dengan gaya lebih segar untuk kursus online."
+            },
+            {
+              "name": "Univet",
+              "url": "https://themeforest.net/",
+              "urlLabel": "Lihat di ThemeForest ↗",
+              "price": "Template ThemeForest",
+              "metric": "524 sales",
+              "freshness": 1,
+              "popularity": 524,
+              "badges": [],
+              "pattern": "scroll",
+              "premium": false,
+              "note": "Variasi tema kampus dengan fokus halaman fakultas & acara akademik."
+            },
+            {
+              "name": "EduZone",
+              "url": "https://themeforest.net/",
+              "urlLabel": "Lihat di ThemeForest ↗",
+              "price": "$49",
+              "metric": "Template sekolah & kursus",
+              "freshness": 2,
+              "popularity": 700,
+              "badges": [],
+              "pattern": "scroll",
+              "premium": false,
+              "note": "Pilihan hemat untuk sekolah / lembaga kursus yang butuh cepat online."
+            },
+            {
+              "name": "Brookside",
+              "url": "https://themeforest.net/",
+              "urlLabel": "Lihat di ThemeForest ↗",
+              "price": "$49",
+              "metric": "Template sekolah",
+              "freshness": 3,
+              "popularity": 650,
+              "badges": [
+                "Baru Update"
+              ],
+              "pattern": "scroll",
+              "premium": false,
+              "note": "Tema sekolah dengan tampilan hangat — cocok untuk SD/SMP & bimbel."
+            },
+            {
+              "name": "Education X",
+              "url": "https://themeforest.net/",
+              "urlLabel": "Lihat di ThemeForest ↗",
+              "price": "Template ThemeForest",
+              "metric": "Template pendidikan serbaguna",
+              "freshness": 1,
+              "popularity": 600,
+              "badges": [],
+              "pattern": "scroll",
+              "premium": false,
+              "note": "Base serbaguna untuk lembaga pendidikan nonformal."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "lainnya",
+      "name": "Peminat Tertinggi Lainnya",
+      "desc": "Di luar empat niche utama, ini kategori dengan peminat paling tinggi berikutnya — masing-masing punya satu-dua web patokan yang jadi standar semua orang.",
+      "stack": [
+        "Next.js",
+        "Tailwind CSS",
+        "GSAP",
+        "Lenis"
+      ],
+      "groups": [
+        {
+          "label": "SaaS",
+          "style": "Kejelasan dalam 5 detik — hero, bukti, harga, selesai",
+          "stack": "Next.js + Tailwind + shadcn/ui + Motion",
+          "items": [
+            {
+              "name": "Stripe",
+              "url": "https://stripe.com/",
+              "urlLabel": "stripe.com ↗",
+              "price": "Web live",
+              "metric": "Patokan landing SaaS dunia",
+              "freshness": 3,
+              "popularity": 95000,
+              "badges": [
+                "Top Rated"
+              ],
+              "pattern": "scroll",
+              "premium": false,
+              "note": "Gradien + animasi partikel + kartu 3D — dulu jadi template separuh landing SaaS di internet."
+            },
+            {
+              "name": "Linear",
+              "url": "https://linear.app/",
+              "urlLabel": "linear.app ↗",
+              "price": "Web live",
+              "metric": "Standar baru web produk developer",
+              "freshness": 3,
+              "popularity": 55000,
+              "badges": [
+                "Trending"
+              ],
+              "pattern": "scroll",
+              "premium": false,
+              "note": "Gelap, presisi, micro-interaction di mana-mana. Bukti restraint juga bisa untuk SaaS."
+            },
+            {
+              "name": "Vercel",
+              "url": "https://vercel.com/",
+              "urlLabel": "vercel.com ↗",
+              "price": "Web live",
+              "metric": "Hitam-putih ekstrem, nol dekorasi sia-sia",
+              "freshness": 2,
+              "popularity": 50000,
+              "badges": [],
+              "pattern": "scroll",
+              "premium": false,
+              "note": "Monokrom + grid + kecepatan. Patokan untuk produk developer tools."
+            }
+          ]
+        },
+        {
+          "label": "Agency / Studio",
+          "style": "Showcase sebagai pertunjukan — web-nya sendiri adalah portofolio",
+          "stack": "Three.js / WebGL + GSAP + Lenis",
+          "items": [
+            {
+              "name": "Lusion",
+              "url": "https://lusion.co/",
+              "urlLabel": "lusion.co ↗",
+              "price": "Web live",
+              "metric": "Studio WebGL kelas dunia",
+              "freshness": 2,
+              "popularity": 18000,
+              "badges": [
+                "Awwwards"
+              ],
+              "pattern": "drive",
+              "premium": true,
+              "note": "Simulasi fluida & 3D real-time reaktif ke kursor. Level tertinggi pola Drive/Explore."
+            },
+            {
+              "name": "Active Theory",
+              "url": "https://activetheory.com/",
+              "urlLabel": "activetheory.com ↗",
+              "price": "Web live",
+              "metric": "Studio interaktif peraih banyak penghargaan",
+              "freshness": 2,
+              "popularity": 16000,
+              "badges": [
+                "Awwwards"
+              ],
+              "pattern": "drive",
+              "premium": true,
+              "note": "Transisi halaman sinematik & preview project berbasis WebGL."
+            }
+          ]
+        },
+        {
+          "label": "Real Estate",
+          "style": "Pencarian cepat + foto properti raksasa + peta interaktif",
+          "stack": "Next.js + Tailwind + shadcn/ui + Map + GSAP ringan",
+          "items": [
+            {
+              "name": "Zillow",
+              "url": "https://www.zillow.com/",
+              "urlLabel": "zillow.com ↗",
+              "price": "Web live",
+              "metric": "Platform properti terbesar AS",
+              "freshness": 2,
+              "popularity": 65000,
+              "badges": [
+                "Top Rated"
+              ],
+              "pattern": "config",
+              "premium": false,
+              "note": "Peta + daftar sinkron dua arah — pelajaran UX data geospasial terbaik."
+            },
+            {
+              "name": "Compass",
+              "url": "https://www.compass.com/",
+              "urlLabel": "compass.com ↗",
+              "price": "Web live",
+              "metric": "Brokerage dengan branding paling premium",
+              "freshness": 2,
+              "popularity": 28000,
+              "badges": [],
+              "pattern": "scroll",
+              "premium": false,
+              "note": "Properti dijual seperti majalah desain. Versi “mahal” dari kategori ini."
+            }
+          ]
+        },
+        {
+          "label": "Kesehatan",
+          "style": "Tenang, terpercaya, aksesibel — kontras & keterbacaan di atas gaya",
+          "stack": "Next.js + Tailwind + Motion (halus)",
+          "items": [
+            {
+              "name": "Headspace",
+              "url": "https://www.headspace.com/",
+              "urlLabel": "headspace.com ↗",
+              "price": "Web live",
+              "metric": "Meditasi & sleep — ilustrasi khas",
+              "freshness": 2,
+              "popularity": 30000,
+              "badges": [],
+              "pattern": "scroll",
+              "premium": false,
+              "note": "Karakter ilustrasi konsisten membuat topik berat terasa ringan."
+            },
+            {
+              "name": "One Medical",
+              "url": "https://www.onemedical.com/",
+              "urlLabel": "onemedical.com ↗",
+              "price": "Web live",
+              "metric": "Klinik modern berbasis membership",
+              "freshness": 2,
+              "popularity": 18000,
+              "badges": [],
+              "pattern": "config",
+              "premium": false,
+              "note": "Booking dokter terasa seperti pesan tiket — alur janji temu jadi configurator layanan."
+            }
+          ]
+        },
+        {
+          "label": "Restoran / Hotel",
+          "style": "Foto makanan / ruangan sebagai pemeran utama, reservasi 2 klik",
+          "stack": "Next.js + Tailwind + GSAP + Lenis",
+          "items": [
+            {
+              "name": "Aman Resorts",
+              "url": "https://www.aman.com/",
+              "urlLabel": "aman.com ↗",
+              "price": "Web live",
+              "metric": "Hotel ultra-luxury — restraint ekstrem",
+              "freshness": 1,
+              "popularity": 24000,
+              "badges": [
+                "Awwwards"
+              ],
+              "pattern": "scroll",
+              "premium": true,
+              "note": "Hampir tanpa warna, hampir tanpa teks. Kemewahan lewat keheningan — versi hotel dari Luxury Restraint."
+            },
+            {
+              "name": "Four Seasons",
+              "url": "https://www.fourseasons.com/",
+              "urlLabel": "fourseasons.com ↗",
+              "price": "Web live",
+              "metric": "Rantai hotel mewah global",
+              "freshness": 2,
+              "popularity": 40000,
+              "badges": [
+                "Top Rated"
+              ],
+              "pattern": "config",
+              "premium": false,
+              "note": "Booking engine multi-properti yang tetap terasa mewah — pelajaran pola Configurator untuk jasa."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

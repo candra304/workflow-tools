@@ -1,0 +1,145 @@
+{
+  "categories": [
+    "Core React",
+    "UI Kit",
+    "Animasi",
+    "3D / WebGL",
+    "Scroll & Interaksi",
+    "Aset Premium",
+    "Referensi Web Live",
+    "Template / Starter"
+  ],
+  "categoryThemes": {
+    "Core React": {
+      "a": "#4f46e5",
+      "d": "#2e2a7a",
+      "s": "#eceafe",
+      "i": "#ffffff"
+    },
+    "UI Kit": {
+      "a": "#6366f1",
+      "d": "#3730a3",
+      "s": "#eef0fe",
+      "i": "#ffffff"
+    },
+    "Animasi": {
+      "a": "#e63b25",
+      "d": "#8f1d0d",
+      "s": "#fde9e4",
+      "i": "#ffffff"
+    },
+    "3D / WebGL": {
+      "a": "#b8912a",
+      "d": "#102542",
+      "s": "#e6ebf3",
+      "i": "#ffffff"
+    },
+    "Scroll & Interaksi": {
+      "a": "#1d1a15",
+      "d": "#1d1a15",
+      "s": "#efe9db",
+      "i": "#f5efe0"
+    },
+    "Aset Premium": {
+      "a": "#a8822f",
+      "d": "#3a2f14",
+      "s": "#f3ecda",
+      "i": "#ffffff"
+    },
+    "Referensi Web Live": {
+      "a": "#1a73e8",
+      "d": "#0f3f7d",
+      "s": "#e6f0fd",
+      "i": "#ffffff"
+    },
+    "Template / Starter": {
+      "a": "#0d5c63",
+      "d": "#083f45",
+      "s": "#e0f0f0",
+      "i": "#ffffff"
+    }
+  },
+  "patternNames": {
+    "drive": "Drive / Explore",
+    "scroll": "Scroll Film",
+    "config": "Configurator / Game",
+    "game": "Game / Instrument"
+  },
+  "patterns": [
+    {
+      "id": "drive",
+      "name": "Drive / Explore",
+      "like": "Kayak Bruno Simon & Radio Garden",
+      "desc": "Pengunjung menjelajah dunia 3D sendiri — menyetir, memutar globe, terbang. Satu interaksi utama yang kuat, didukung fisika & kamera halus.",
+      "stack": [
+        "nextjs",
+        "typescript",
+        "tailwind",
+        "threejs",
+        "r3f",
+        "gsap",
+        "lenis",
+        "lucide"
+      ],
+      "time": "3–6 minggu",
+      "level": "Berat"
+    },
+    {
+      "id": "scroll",
+      "name": "Scroll Film",
+      "like": "Kayak Deep Sea & Lando Norris",
+      "desc": "Scroll adalah remote-nya: adegan berganti seperti film, tipografi raksasa pecah per huruf, kamera bergerak mengikuti guliran.",
+      "stack": [
+        "nextjs",
+        "typescript",
+        "tailwind",
+        "gsap",
+        "lenis",
+        "splittype",
+        "motion",
+        "lucide"
+      ],
+      "time": "1–3 minggu",
+      "level": "Sedang"
+    },
+    {
+      "id": "config",
+      "name": "Configurator / Game",
+      "like": "Kayak Scout Motors & Bulgari",
+      "desc": "Produk jadi bintang: render 3D bisa diputar, varian diganti live, harga & detail mengikuti pilihan pengunjung.",
+      "stack": [
+        "nextjs",
+        "typescript",
+        "tailwind",
+        "shadcn",
+        "r3f",
+        "gsap",
+        "lucide"
+      ],
+      "time": "2–4 minggu",
+      "level": "Sedang"
+    },
+    {
+      "id": "game",
+      "name": "Game / Instrument",
+      "like": "Kayak Patatap & Quick, Draw!",
+      "desc": "Web yang dimainkan: tombol, gambar, dan gesture jadi input — suara & bentuk menjawab seketika. Ringan, nagih, gampang viral.",
+      "stack": [
+        "vite",
+        "react",
+        "typescript",
+        "tailwind",
+        "motion",
+        "animejs",
+        "lucide"
+      ],
+      "time": "3–10 hari",
+      "level": "Ringan"
+    }
+  ],
+  "threeDSetNames": {
+    "3d-three": "Three.js / R3F",
+    "3d-spline": "Spline",
+    "3d-ogl": "OGL"
+  }
+}

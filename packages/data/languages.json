@@ -1,0 +1,75 @@
+{
+  "languages": [
+    {
+      "name": "HTML",
+      "note": "Struktur halaman",
+      "color": "#ff6a3d",
+      "filter": "HTML"
+    },
+    {
+      "name": "CSS",
+      "note": "Styling & layout",
+      "color": "#3d9bff",
+      "filter": "CSS"
+    },
+    {
+      "name": "JavaScript",
+      "note": "Interaksi & logika",
+      "color": "#f5d83d",
+      "filter": "JavaScript"
+    },
+    {
+      "name": "TypeScript",
+      "note": "JavaScript aman tipe",
+      "color": "#4a86e8",
+      "filter": "TypeScript"
+    },
+    {
+      "name": "React / Next.js",
+      "note": "Web app modern",
+      "color": "#5fd4f0",
+      "filter": "React / Next.js"
+    },
+    {
+      "name": "Tailwind",
+      "note": "Utility styling cepat",
+      "color": "#3ddbd9",
+      "filter": "Tailwind"
+    },
+    {
+      "name": "Python",
+      "note": "Data, backtest, script",
+      "color": "#ffd94a",
+      "filter": "Python"
+    },
+    {
+      "name": "Three.js",
+      "note": "3D & WebGL",
+      "color": "#b6f34a",
+      "filter": "Three.js"
+    },
+    {
+      "name": "GSAP",
+      "note": "Animasi & scroll",
+      "color": "#8be03d",
+      "filter": null
+    },
+    {
+      "name": "Pine Script",
+      "note": "Indikator TradingView",
+      "color": "#7ee0b8",
+      "filter": null
+    }
+  ],
+  "filters": [
+    "Semua",
+    "HTML",
+    "CSS",
+    "JavaScript",
+    "TypeScript",
+    "React / Next.js",
+    "Tailwind",
+    "Python",
+    "Three.js"
+  ]
+}

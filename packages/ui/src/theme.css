@@ -1,0 +1,57 @@
+/**
+ * theme.css — SISTEM TEMA monorepo ini (dipakai bareng kedua app).
+ *
+ * Prinsip: SATU variabel tema `--ta` (+ `--ta-deep`, `--ta-soft`,
+ * `--ta-ink`) yang di-override per konteks. TIDAK ADA satu warna
+ * "merek" untuk semua — tiap pola / kategori / niche punya temanya
+ * sendiri (lihat packages/ui/src/tokens.ts untuk peta yang sama
+ * dalam bentuk data). Tema v2 dipertahankan persis di sini:
+ * hitam pekat + hijau limau TIDAK dipakai lagi di mana pun.
+ *
+ * Cara pakai di komponen:
+ *   1. Tambahkan class `.pattern--drive` / `.pattern--scroll` /
+ *      `.pattern--config` / `.pattern--game` pada kartu pola, atau
+ *   2. Tambahkan atribut `data-niche="finance|portfolio|ecommerce|
+ *      pendidikan|lainnya"` pada blok niche, atau
+ *   3. Tambahkan atribut `data-theme="luxury|challenger|saas|edu|
+ *      editorial|finance|drive|health"` pada sub-grup niche, atau
+ *   4. Set inline style lewat `themeStyle(vars)` dari tokens.ts
+ *      (dipakai kartu katalog, yang temanya ikut kategorinya).
+ */
+
+/* Nilai default --ta (netral, sebelum di-override per konteks). */
+:root {
+  --ta: #3d4756;
+  --ta-deep: #232a35;
+  --ta-soft: #eceff3;
+  --ta-ink: #ffffff;
+}
+
+/* ---------- TEMA PER POLA (Pattern Picker) ---------- */
+.pattern--drive { --ta: #0d5c63; --ta-deep: #083f45; --ta-soft: #e0f0f0; --ta-ink: #ffffff; }
+.pattern--scroll { --ta: #1d1a15; --ta-deep: #1d1a15; --ta-soft: #efe9db; --ta-ink: #f5efe0; }
+.pattern--config { --ta: #a8822f; --ta-deep: #3a2f14; --ta-soft: #f3ecda; --ta-ink: #ffffff; }
+.pattern--game { --ta: #e63b25; --ta-deep: #8f1d0d; --ta-soft: #fde9e4; --ta-ink: #ffffff; }
+
+/* ---------- TEMA PER NICHE ---------- */
+.niche-block[data-niche="finance"] { --ta: #b8912a; --ta-deep: #102542; --ta-soft: #e6ebf3; --ta-ink: #ffffff; }
+.niche-block[data-niche="portfolio"] { --ta: #1d1a15; --ta-deep: #1d1a15; --ta-soft: #efe9db; --ta-ink: #f5efe0; }
+.niche-block[data-niche="ecommerce"] { --ta: #e63b25; --ta-deep: #8f1d0d; --ta-soft: #fde9e4; --ta-ink: #ffffff; }
+.niche-block[data-niche="pendidikan"] { --ta: #1a73e8; --ta-deep: #0f3f7d; --ta-soft: #e6f0fd; --ta-ink: #ffffff; }
+.niche-block[data-niche="lainnya"] { --ta: #4f46e5; --ta-deep: #2e2a7a; --ta-soft: #eceafe; --ta-ink: #ffffff; }
+
+.niche-block[data-niche="finance"] .niche-head { background: #102542; color: #e8c766; }
+.niche-block[data-niche="portfolio"] .niche-head { background: #14120e; color: #efe6cf; }
+.niche-block[data-niche="ecommerce"] .niche-head { background: #e63b25; color: #ffffff; }
+.niche-block[data-niche="pendidikan"] .niche-head { background: #1a73e8; color: #ffffff; }
+.niche-block[data-niche="lainnya"] .niche-head { background: #3730a3; color: #ffffff; }
+
+/* ---------- TEMA PER SUB-GRUP NICHE ---------- */
+.subgroup[data-theme="luxury"] { --ta: #a8822f; --ta-deep: #3a2f14; --ta-soft: #f3ecda; --ta-ink: #ffffff; }
+.subgroup[data-theme="challenger"] { --ta: #e63b25; --ta-deep: #8f1d0d; --ta-soft: #fde9e4; --ta-ink: #ffffff; }
+.subgroup[data-theme="saas"] { --ta: #4f46e5; --ta-deep: #2e2a7a; --ta-soft: #eceafe; --ta-ink: #ffffff; }
+.subgroup[data-theme="edu"] { --ta: #1a73e8; --ta-deep: #0f3f7d; --ta-soft: #e6f0fd; --ta-ink: #ffffff; }
+.subgroup[data-theme="editorial"] { --ta: #1d1a15; --ta-deep: #1d1a15; --ta-soft: #efe9db; --ta-ink: #f5efe0; }
+.subgroup[data-theme="finance"] { --ta: #b8912a; --ta-deep: #102542; --ta-soft: #e6ebf3; --ta-ink: #ffffff; }
+.subgroup[data-theme="drive"] { --ta: #0d5c63; --ta-deep: #083f45; --ta-soft: #e0f0f0; --ta-ink: #ffffff; }
+.subgroup[data-theme="health"] { --ta: #2e7d6b; --ta-deep: #17493e; --ta-soft: #e2f1ec; --ta-ink: #ffffff; }

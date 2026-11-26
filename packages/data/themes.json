@@ -1,0 +1,102 @@
+{
+  "workflowTools": [
+    {
+      "name": "Finance / Prop Firm",
+      "note": "Navy + Emas",
+      "swatches": [
+        "#102542",
+        "#c9a227"
+      ]
+    },
+    {
+      "name": "Portfolio",
+      "note": "Hitam-Putih / Krem",
+      "swatches": [
+        "#14120e",
+        "#efe6cf"
+      ]
+    },
+    {
+      "name": "E-Commerce Luxury",
+      "note": "Beige + Hitam + Emas",
+      "swatches": [
+        "#ece0c8",
+        "#a8822f"
+      ]
+    },
+    {
+      "name": "E-Commerce Challenger",
+      "note": "Warna Berani",
+      "swatches": [
+        "#e63b25",
+        "#c2187a"
+      ]
+    },
+    {
+      "name": "Pendidikan / Instansi",
+      "note": "Biru Cerah + Putih",
+      "swatches": [
+        "#1a73e8",
+        "#ffffff"
+      ]
+    },
+    {
+      "name": "SaaS",
+      "note": "Indigo + Putih",
+      "swatches": [
+        "#4f46e5",
+        "#ffffff"
+      ]
+    }
+  ],
+  "demoHub": [
+    {
+      "name": "Finance / Prop Firm",
+      "note": "Navy gelap + emas",
+      "swatches": [
+        "#0a1830",
+        "#e3b341"
+      ]
+    },
+    {
+      "name": "Portfolio",
+      "note": "Editorial hitam-putih / krem",
+      "swatches": [
+        "#17150f",
+        "#ece4d1"
+      ]
+    },
+    {
+      "name": "E-Commerce Luxury",
+      "note": "Beige + hitam + emas",
+      "swatches": [
+        "#e7dcc4",
+        "#d8b98a"
+      ]
+    },
+    {
+      "name": "E-Commerce Challenger",
+      "note": "Warna berani, kontras tinggi",
+      "swatches": [
+        "#ff7a59",
+        "#ffd23d"
+      ]
+    },
+    {
+      "name": "Pendidikan",
+      "note": "Biru cerah + putih",
+      "swatches": [
+        "#38bdf8",
+        "#ffffff"
+      ]
+    },
+    {
+      "name": "SaaS / Tools",
+      "note": "Indigo + putih",
+      "swatches": [
+        "#4f46e5",
+        "#a5b4fc"
+      ]
+    }
+  ]
+}
