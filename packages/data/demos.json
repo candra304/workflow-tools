@@ -1,5 +1,31 @@
 [
   {
+    "id": "sekolah-pondok",
+    "title": "Sekolah Pondok — Pondok Pesantren Darul Ilmi",
+    "date": "2026-11-26",
+    "dateLabel": "26 Nov 2026",
+    "status": "Live",
+    "desc": "Website premium pola Scroll Film untuk pondok pesantren — hero + statistik santri, 6 program (Tahfidz, SDIT, SMPIT, Madrasah Diniyah, Bahasa Arab & Inggris, Takhassus), timeline jadwal harian interaktif, fasilitas, ustadz, pendaftaran 4 langkah + form + WA, FAQ wali murid. Tema hijau zamrud + emas + putih.",
+    "prompt": "Test WT: bangun website premium super interaktif untuk sekolah pondok",
+    "stacks": [
+      "Tailwind",
+      "GSAP + ScrollTrigger",
+      "Lenis",
+      "Motion",
+      "Lucide",
+      "JavaScript"
+    ],
+    "cat": "Pendidikan",
+    "theme": {
+      "a": "#d9b45b",
+      "soft": "rgba(217,180,91,.13)",
+      "line": "rgba(217,180,91,.45)",
+      "tbg": "#07271e",
+      "on": "#122b1e"
+    },
+    "thumb": "motion"
+  },
+  {
     "id": "workflow-tools",
     "title": "Workflow Tools",
     "date": "2026-11-26",
